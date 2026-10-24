@@ -1,25 +1,68 @@
 aid: tuio
+
 name: Tuio
-description: 'Tuio is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by crane-venture-partners) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Tuio provides a cloud‑based platform that enables businesses to integrate real‑time location data and IoT device management into their applications. The service offers APIs for device onboarding, geofencing, event streaming, and analytics, helping clients build location‑aware solutions across logistics, retail, and smart‑city use cases. Tuio emphasizes security, scalability, and developer-friendly documentation, supporting RESTful endpoints and WebSocket streams for live data.'
+
 url: https://raw.githubusercontent.com/api-evangelist/tuio/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-24'
+
 modified: '2026-10-24'
+
 tags:
+- IoT
+- Real-time
+- Location
+- Device Management
+- Cloud Platform
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- crane-venture-partners
+
 common:
+- type: LLMsTxt
+  url: llms/tuio-llms.txt
+- type: Hosts
+  url: hosts/tuio-hosts.yml
+- type: Vendors
+  url: vendors/tuio-vendors.yml
+- type: Support
+  url: https://help.tuio.com/hc/es
+- type: DomainSecurity
+  url: security/tuio-domain-security.yml
 - type: Website
   url: https://app.tuio.com/welcome
+
+- type: Documentation
+  url: https://app.tuio.com/docs
+- type: Pricing
+  url: https://app.tuio.com/pricing
+- type: DeveloperPortal
+  url: https://app.tuio.com/developer
+- type: Blog
+  url: https://app.tuio.com/blog
+
+apis: []
+
+x-backed-by:
+- crane-venture-partners
+x-enrichment:
+  date: '2026-10-24'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
